@@ -35,12 +35,7 @@ let DPLLForClique colours =
     let mutable satResult = SAT
     while satResult = SAT do
         printfn "cliqueSize %A with %A colours" cliqueSize colours
-        let edgesNumber = cliqueSize * (cliqueSize - 1) / 2
         let nconjs =  formulaForClique colours cliqueSize 
-//        printfn "%A" nconjs.Length
-//        for conj in  nconjs do
-//            List.iter (fun x -> printf "%d " x) conj
-//            printf "\n"
         let (sat, model) = DPLL(nconjs, Set.empty)
         if sat = SAT
         then 
