@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>mathlog_cliquecolouring</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="SatSolver.fs" />
+      <Compile Include="CliqueColouring.fs" />
+      <Compile Include="Main.fs" />
+    </ItemGroup>
+
+</Project>
